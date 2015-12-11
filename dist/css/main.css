@@ -1302,8 +1302,8 @@ footer {
   padding-bottom: 3.6rem;
   font-size: 1.3rem; }
 
-.headerRight {
-  margin-top: 50px; }
+#navList {
+  margin-top: 45px; }
 
 section {
   padding-top: 7.2rem;
@@ -1340,13 +1340,14 @@ section {
 #jumbotron {
   background-color: #112e51;
   color: #ffffff;
-  background-image: url("../img/jumbobg.gif");
-  background-position: right bottom;
-  background-repeat: repeat-y; }
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 12rem; }
   #jumbotron h1 {
-    padding-top: 4.5rem;
-    font-size: 5.6rem; }
+    font-size: 5.6rem;
+    margin-top: 0; }
   #jumbotron h2 {
     font-size: 2rem;
     line-height: 1.7;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 0; }
