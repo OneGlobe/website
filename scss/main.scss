@@ -68,6 +68,9 @@ section {
 #jumbotron {
   background-color: $color-primary-darkest;
   color: $color-white;
+  background-image: url('../img/jumbobg.gif');
+  background-position: right bottom;
+  background-repeat: repeat-y;
 
   h1 {
     padding-top: 4.5rem;

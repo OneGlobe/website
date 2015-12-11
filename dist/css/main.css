@@ -1339,7 +1339,10 @@ section {
 
 #jumbotron {
   background-color: #112e51;
-  color: #ffffff; }
+  color: #ffffff;
+  background-image: url("../img/jumbobg.gif");
+  background-position: right bottom;
+  background-repeat: repeat-y; }
   #jumbotron h1 {
     padding-top: 4.5rem;
     font-size: 5.6rem; }
