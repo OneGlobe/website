@@ -1326,9 +1326,8 @@ section {
   .capability-desc h3 {
     margin-top: 0; }
   .capability-desc .thumbnail {
-    height: 150px;
-    width: 150px;
-    display: inline-block; }
+    margin-left: auto;
+    margin-right: auto; }
 
 .catchSeparator {
   color: #e31c3d;
