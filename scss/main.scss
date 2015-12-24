@@ -5,6 +5,11 @@ header {
   background-color: $color-gray-lightest;
   padding: 5px 0;
   font-size: 1.4rem;
+
+  .tagline {
+    color: $color-primary-darker;
+  }
+
 }
 
 footer {
@@ -66,6 +71,8 @@ section {
 
 #jumbotron {
   background-color: $color-primary-darkest;
+  background-image: url('../img/jumbobg.gif');
+  background-repeat: repeat;
   color: $color-white;
   text-align: center;
   padding-top: 12rem;

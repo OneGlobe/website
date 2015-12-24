@@ -1296,6 +1296,8 @@ header {
   background-color: #f1f1f1;
   padding: 5px 0;
   font-size: 1.4rem; }
+  header .tagline {
+    color: #205493; }
 
 footer {
   padding-top: 3.6rem;
@@ -1338,6 +1340,8 @@ section {
 
 #jumbotron {
   background-color: #112e51;
+  background-image: url("../img/jumbobg.gif");
+  background-repeat: repeat;
   color: #ffffff;
   text-align: center;
   padding-top: 12rem;
