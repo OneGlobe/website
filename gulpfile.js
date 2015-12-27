@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var minifyCss = require('gulp-minify-css');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -22,11 +23,11 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('usds', function() {
-    return gulp.src('usds/*.css')
-        .pipe(gulp.dest('dist/css/usds'));
+gulp.task('minify-css', ['sass'], function() {
+    return gulp.src('dist/css/*.css')
+        .pipe(minifyCss())
+        .pipe(gulp.dest('dist/css'));
 });
-
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
@@ -68,5 +69,5 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('build', ['lint', 'sass', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
-gulp.task('default', ['lint', 'sass', 'scripts', 'html', 'img', 'angular', 'bootstrap', 'watch']);
+gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
+gulp.task('default', ['build', 'watch']);
