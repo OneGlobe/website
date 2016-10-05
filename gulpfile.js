@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
+var nunjucksRender = require('gulp-nunjucks-render');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -59,15 +60,29 @@ gulp.task('bootstrap', function() {
         .pipe(gulp.dest('dist/lib/bootstrap'));
 });
 
+gulp.task('nunjucks', function() {
+    // Gets .html and .njk files in pages
+    return gulp.src('html/pages/**/*.+(html|njk)')
+        // Renders template with nunjucks
+        .pipe(nunjucksRender({
+            path: ['html/templates']
+        }))
+        // output files in app folder
+        .pipe(gulp.dest('dist'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('img/*', ['img']);
-    gulp.watch('html/*.html', ['html']);
+    gulp.watch('html/*.html', ['nunjucks']);
+
+//    gulp.watch('html/*.html', ['html']);
 
 });
 
 
-gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
+//gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
+gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'nunjucks', 'img', 'angular', 'bootstrap']);
 gulp.task('default', ['build', 'watch']);
