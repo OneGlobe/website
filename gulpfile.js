@@ -76,7 +76,8 @@ gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('img/*', ['img']);
-    gulp.watch('html/*.html', ['nunjucks']);
+    gulp.watch('html/**/*.html', ['nunjucks']);
+    gulp.watch('html/**/*.njk', ['nunjucks']);
 
 //    gulp.watch('html/*.html', ['html']);
 
