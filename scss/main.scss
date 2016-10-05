@@ -1,6 +1,10 @@
 
 @import 'all';
 
+body {
+  color: $color-gray;
+}
+
 header {
   background-color: $color-primary-darkest;
   padding: 5px 0;
@@ -47,7 +51,11 @@ section {
   padding-bottom: 7.2rem;
 
   h1, h2, h3, h4, h5, h6 {
-    color: $color-primary-darkest;
+    color: $color-gray;
+  }
+
+  h1 {
+    letter-spacing: 3px;
   }
 }
 
@@ -89,6 +97,12 @@ section {
   height: 50px;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
+
+
 #jumbotron {
   background-color: $color-primary-darkest;
   //background-image: url('../img/jumbobg.gif');
@@ -102,7 +116,6 @@ section {
     font-size: 5.6rem;
     margin-top: 0;
     font-weight: bold;
-    text-transform: uppercase;
   }
 
   h2 {
