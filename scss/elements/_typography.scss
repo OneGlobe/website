@@ -17,17 +17,17 @@ p {
 }
 
 a {
-  color: $color-primary-darker;
+  color: $color-primary;
   text-decoration: none;
 
   &:hover, 
   &:active {
-    color: $color-primary;
-    text-decoration: none;
+    color: $color-primary-darker;
+    text-decoration: underline;
   }
 
   &:visited {
-    color: $color-primary-darker;
+    color: $color-visited;
   }
 
   &:focus {
