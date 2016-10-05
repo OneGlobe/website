@@ -1,336 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
+{% extends "layout.njk" %}
 
-    <meta property="og:title" content="OneGlobe">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
-    <meta property="og:url" content="http://www.oneglobeit.com">
-    <meta property="og:image" content="http://www.oneglobeit.com/img/logo.png">
-
-    <meta name="twitter:card" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
-    <meta name="twitter:site" content="@oneglobellc">
-    <meta name="twitter:title" content="OneGlobe">
-    <meta name="twitter:description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-71782073-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-    <title>OneGlobe</title>
-
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-
-</head>
-<body>
+{% block content %}
+<div class="container-fluid" id="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Building the systems you imagine</h1>
+                <h2>Celebrating a decade of helping our customers realize their visions through technology</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-    <header class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                    <img class="logo" src="img/logo.png" alt="OneGlobe logo" /><br />
-                    <div class="tagline">Strategy <span class="catchSeparator">|</span> Technology <span class="catchSeparator">|</span> Execution</div>
-
+<a name="capabilities"></a>
+<section class="container-fluid section-alt">
+    <div class="container">
+        <h2>Capabilities</h2>
+        <div class="row">
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/agile.gif" alt="Agile Software Development"></a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Agile Software Development</h3>
+                        <p>
+                            We provide value to our customers by developing software the most efficient way possible using proven agile techniques and methodologies.   With a practical approach, we keep the focus on what really matters:  collaboratively delivering high quality software that meets your needs.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-xs-6 text-right hidden-xs">
-                    <ul class="list-unstyled list-inline" id="navList">
-                        <li><a href="#capabilities">Capabilities</a></li>
-                        <li><a href="#customers">Customers</a></li>
-                        <li><a href="#contracts">Contracts</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                    </ul>
-
+            </div>
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/cloud.gif" alt="Cloud Architecture and Development">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Cloud Architecture &amp; Development</h3>
+                        <p>
+                            OneGlobe employs highly-skilled architects with hands-on experience using all of the major cloud providers.  We can help you plan the right solution for your organization from cloud, on-premise, or hybrid, and deliver the systems to meet your needs.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-
-    <div class="container-fluid" id="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Building the systems you imagine</h1>
-                    <h2>Celebrating a decade of helping our customers realize their visions through technology</h2>
+        <div class="row">
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/architecture.gif" alt="IT Architecture">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>IT Architecture</h3>
+                        <p>
+                            Information Technology Architecture and data flows are some of OneGlobe&apos;s core service offerings.  We handle IT Architecture at all levels of an organization:  business, enterprise, system, solution, data, application, software, infrastructure, service, cloud, AWS, Salesforce and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/aws.gif" alt="Amazon Web Services"></a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Amazon Web Services</h3>
+                        <p>
+                            Our AWS Certified Solution Architects will determine the right solutions to meet your organization&apos;s architecture, security, development, optimization, monitoring, and application services challenges.  Whether it&apos;s cloud-first or a hybrid footprint, custom-developed or AWS service-based, OneGlobe can efficiently and expertly implement your needs using AWS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/gears.gif" alt="DevOps Engineering">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>DevOps Engineering</h3>
+                        <p>
+                            Not just a buzz word, but the way we do business.  On-premise and in the cloud, we automate and coordinate your continuous development, integration, and delivery practices to deliver value to you faster.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/bpm.gif" alt="Business Process Management">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Business Process Management</h3>
+                        <p>
+                            At the heart of all organizations are the processes they perform.  We can help to define, model, and implement those processes using the latest BPM software tools while meeting audit, monitoring and reporting requirements with the best user interface possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/salesforce.gif" alt="Salesforce Implementation">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Salesforce Implementation</h3>
+                        <p>
+                            Harness the power of Salesforce using our certified Salesforce Developers to help you configure solutions out of the box, and customize as needed.  Our architects and developers can integrate your existing processes into a full-featured Salesforce application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 capability-desc">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="thumbnail" src="img/security.gif" alt="Identity and Access Management">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Identity &amp; Access Management</h3>
+                        <p>
+                            We deliver identity and access management solutions that support attribute-based, role-based, and policy-based access control systems.  We protect enterprise data and systems to meet the security, governance, and audit requirements of today&apos;s operational environments.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
 
-    <a name="capabilities"></a>
-    <section class="container-fluid section-alt">
-        <div class="container">
-            <h2>Capabilities</h2>
-            <div class="row">
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/agile.gif" alt="Agile Software Development"></a>
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Agile Software Development</h3>
-                            <p>
-                                We provide value to our customers by developing software the most efficient way possible using proven agile techniques and methodologies.   With a practical approach, we keep the focus on what really matters:  collaboratively delivering high quality software that meets your needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/cloud.gif" alt="Cloud Architecture and Development">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Cloud Architecture &amp; Development</h3>
-                            <p>
-                                OneGlobe employs highly-skilled architects with hands-on experience using all of the major cloud providers.  We can help you plan the right solution for your organization from cloud, on-premise, or hybrid, and deliver the systems to meet your needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<a name="customers" ></a>
+<section class="container-fluid">
+    <div class="container">
+        <h2>Customers</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    We solve the problems that matter most to our customers while taking a practical, innovative, and efficient approach to everything we do.  From the smallest projects to the most transformative, impactful programs, we help drive the best outcomes across a varied set of domains.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/architecture.gif" alt="IT Architecture">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>IT Architecture</h3>
-                            <p>
-                                Information Technology Architecture and data flows are some of OneGlobe&apos;s core service offerings.  We handle IT Architecture at all levels of an organization:  business, enterprise, system, solution, data, application, software, infrastructure, service, cloud, AWS, Salesforce and more.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/aws.gif" alt="Amazon Web Services"></a>
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Amazon Web Services</h3>
-                            <p>
-                                Our AWS Certified Solution Architects will determine the right solutions to meet your organization&apos;s architecture, security, development, optimization, monitoring, and application services challenges.  Whether it&apos;s cloud-first or a hybrid footprint, custom-developed or AWS service-based, OneGlobe can efficiently and expertly implement your needs using AWS.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>National Security</h3>
+                <p>
+                    We service the intelligence, defense, and homeland security communities across multiple agencies.  Our solutions and systems help to enable the most critical components that keep the United States safe and secure.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/gears.gif" alt="DevOps Engineering">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>DevOps Engineering</h3>
-                            <p>
-                                Not just a buzz word, but the way we do business.  On-premise and in the cloud, we automate and coordinate your continuous development, integration, and delivery practices to deliver value to you faster.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/bpm.gif" alt="Business Process Management">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Business Process Management</h3>
-                            <p>
-                                At the heart of all organizations are the processes they perform.  We can help to define, model, and implement those processes using the latest BPM software tools while meeting audit, monitoring and reporting requirements with the best user interface possible.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-4">
+                <h3>Federal Civilian</h3>
+                <p>
+                    Building the federal service applications and infrastructure that supports each of us every single day requires the best possible engineering teams.  From hands-on execution to architecture and planning, we bring the practical, cost-effective solutions that keep us moving toward the future.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/salesforce.gif" alt="Salesforce Implementation">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Salesforce Implementation</h3>
-                            <p>
-                                Harness the power of Salesforce using our certified Salesforce Developers to help you configure solutions out of the box, and customize as needed.  Our architects and developers can integrate your existing processes into a full-featured Salesforce application.
-                            </p>
-                        </div>
+            <div class="col-sm-4">
+                <h3>Commercial Partners</h3>
+                <p>
+                    Our business partners come in all shapes and sizes, from small business to large system integrators.  Our knowledgable, senior technical staff bring expert support to proposal, capture, strategy, and teaming opportunities.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<a name="contracts" ></a>
+<section class="container-fluid section-alt">
+    <div class="container">
+        <h2>Contracts</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    OneGlobe services are available on the following contract vehicles or through our strategic teaming partnerships:
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <h3 class="row">
+                    <div class="col-xs-9">
+                        GSA Multiple Award Schedule 70<br />
+                        Information Technology Professional Services
                     </div>
-                </div>
-                <div class="col-md-6 capability-desc">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="thumbnail" src="img/security.gif" alt="Identity and Access Management">
-                        </div>
-                        <div class="col-sm-8">
-                            <h3>Identity &amp; Access Management</h3>
-                            <p>
-                                We deliver identity and access management solutions that support attribute-based, role-based, and policy-based access control systems.  We protect enterprise data and systems to meet the security, governance, and audit requirements of today&apos;s operational environments.
-                            </p>
-                        </div>
+                    <div class="col-xs-3 text-right">
+                        <img src="img/Schedule_StarMark_color_generic.jpg"/>
+                    </div>
+                </h3>
+                <table class="usa-table table-condensed usa-table-borderless">
+                    <tr>
+                        <td>Contract Number:</td>
+                        <td>GS-35F-306DA</td>
+                    </tr>
+                    <tr>
+                        <td>Contract Type:</td>
+                        <td>MAS</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Agencies:</td>
+                        <td>US Federal, State and Local Governments</td>
+                    </tr>
+                    <tr>
+                        <td>Ceiling:</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Period of Performance:</td>
+                        <td>May 11, 2016, through May 10, 2021 plus options</td>
+                    </tr>
+                    <tr>
+                        <td>Link:</td>
+                        <td><a href="https://www.gsaadvantage.gov/ref_text/GS35F306DA/0PL561.3B2VTI_GS-35F-306DA_ONEGLOBEPRICELIST.PDF">GSA Advantage</a></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<a name="careers" ></a>
+<section class="container-fluid section-dark">
+    <div class="container">
+        <h2>Careers</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Join us.  Kick ass.</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>We&apos;re always on the lookout for the most driven and passionate technical team members.  Our teams are made up of engineers that have the talent, aptitude, and mindset to take on the most challenging problems facing our world today.</p>
+                        <p>We offer market-leading compensation with a structure that encourages independence, growth, and initiatve across our teams.  No TPS reports.  No artificial targets.  No BS.</p>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <p>
+                            Think practically.<br/>
+                            Think efficiently.<br/>
+                            Solve real problems.<br/>
+                            Sound good?<br/>
+                        </p>
+                        <p><a href="mailto:jobs@oneglobeit.com" class="usa-button usa-button-big usa-button-outline-inverse" >Apply</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
-    <a name="customers" ></a>
-    <section class="container-fluid">
-        <div class="container">
-            <h2>Customers</h2>
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>
-                        We solve the problems that matter most to our customers while taking a practical, innovative, and efficient approach to everything we do.  From the smallest projects to the most transformative, impactful programs, we help drive the best outcomes across a varied set of domains.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3>National Security</h3>
-                    <p>
-                        We service the intelligence, defense, and homeland security communities across multiple agencies.  Our solutions and systems help to enable the most critical components that keep the United States safe and secure.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Federal Civilian</h3>
-                    <p>
-                        Building the federal service applications and infrastructure that supports each of us every single day requires the best possible engineering teams.  From hands-on execution to architecture and planning, we bring the practical, cost-effective solutions that keep us moving toward the future.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Commercial Partners</h3>
-                    <p>
-                        Our business partners come in all shapes and sizes, from small business to large system integrators.  Our knowledgable, senior technical staff bring expert support to proposal, capture, strategy, and teaming opportunities.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <a name="contracts" ></a>
-    <section class="container-fluid section-alt">
-        <div class="container">
-            <h2>Contracts</h2>
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>
-                        OneGlobe services are available on the following contract vehicles or through our strategic teaming partnerships:
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-9">
-                    <h3 class="row">
-                        <div class="col-xs-9">
-                            GSA Multiple Award Schedule 70<br />
-                            Information Technology Professional Services
-                        </div>
-                        <div class="col-xs-3 text-right">
-                            <img src="img/Schedule_StarMark_color_generic.jpg"/>
-                        </div>
-                    </h3>
-                    <table class="usa-table table-condensed usa-table-borderless">
-                        <tr>
-                            <td>Contract Number:</td>
-                            <td>GS-35F-306DA</td>
-                        </tr>
-                        <tr>
-                            <td>Contract Type:</td>
-                            <td>MAS</td>
-                        </tr>
-                        <tr>
-                            <td>Customer Agencies:</td>
-                            <td>US Federal, State and Local Governments</td>
-                        </tr>
-                        <tr>
-                            <td>Ceiling:</td>
-                            <td>Unlimited</td>
-                        </tr>
-                        <tr>
-                            <td>Period of Performance:</td>
-                            <td>May 11, 2016, through May 10, 2021 plus options</td>
-                        </tr>
-                        <tr>
-                            <td>Link:</td>
-                            <td><a href="https://www.gsaadvantage.gov/ref_text/GS35F306DA/0PL561.3B2VTI_GS-35F-306DA_ONEGLOBEPRICELIST.PDF">GSA Advantage</a></td>
-                        </tr>
-
-                    </table>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <a name="careers" ></a>
-    <section class="container-fluid section-dark">
-        <div class="container">
-            <h2>Careers</h2>
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3>Join us.  Kick ass.</h3>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>We&apos;re always on the lookout for the most driven and passionate technical team members.  Our teams are made up of engineers that have the talent, aptitude, and mindset to take on the most challenging problems facing our world today.</p>
-                            <p>We offer market-leading compensation with a structure that encourages independence, growth, and initiatve across our teams.  No TPS reports.  No artificial targets.  No BS.</p>
-                        </div>
-                        <div class="col-sm-6 text-center">
-                            <p>
-                                Think practically.<br/>
-                                Think efficiently.<br/>
-                                Solve real problems.<br/>
-                                Sound good?<br/>
-                            </p>
-                            <p><a href="mailto:jobs@oneglobeit.com" class="usa-button usa-button-big usa-button-outline-inverse" >Apply</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="container-fluid">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 text-center">
-                    <a href="mailto:info@oneglobeit.com">info@oneglobeit.com</a><br />
-                    <a href="mailto:jobs@oneglobeit.com">jobs@oneglobeit.com</a>
-                </div>
-                <div class="col-md-6 text-center">
-                    703-850-0062<br />
-                    20552 Wild Meadow Ct, Ashburn, VA 20147
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-
-</body>
-</html>
+{% endblock %}
