@@ -135,8 +135,16 @@ h1 {
   }
 }
 
-img.staff-profile {
-  width: 100%;
+.staff-profile {
+
+  img {
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: .1rem 0;
+  }
+
 }
 
 // n is number of stars required
