@@ -6,7 +6,10 @@ body {
 }
 
 header {
-  background-color: $color-primary-darkest;
+  background-color: $color-white;
+  position: absolute;
+  top: 15px;
+  width: 100%;
   padding: 5px 0;
   font-size: 1.4rem;
 
@@ -15,17 +18,17 @@ header {
   }
 
   a {
-    color: $color-gray-lighter;
+    color: $color-primary-darkest;
     text-decoration: none;
 
     &:hover,
     &:active {
-      color: $color-white;
+      color: $color-primary-darker;
       text-decoration: none;
     }
 
     &:visited {
-      color: $color-gray-lighter;
+      color: $color-primary-darkest;
     }
 
     &:focus {
@@ -43,7 +46,7 @@ footer {
 }
 
 #navList {
-  margin-top: 45px;
+  margin-top: 1.5rem;
 }
 
 section {
@@ -94,7 +97,7 @@ section {
 }
 
 .logo {
-  height: 50px;
+  height: 35px;
 }
 
 h1 {
@@ -109,7 +112,7 @@ h1 {
   background-repeat: repeat;
   color: $color-white;
   text-align: center;
-  padding-top: 12rem;
+  padding-top: 20rem;
   padding-bottom: 12rem;
 
   h1 {
