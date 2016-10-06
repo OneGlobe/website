@@ -135,6 +135,9 @@ h1 {
   }
 }
 
+img.staff-profile {
+  width: 100%;
+}
 
 // n is number of stars required
 @function multiple-box-shadow ($n) {
