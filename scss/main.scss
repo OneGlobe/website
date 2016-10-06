@@ -134,3 +134,83 @@ h1 {
     margin-bottom: 0;
   }
 }
+
+
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(500)}px #FFF';
+  @for $i from 2 through $n {
+    $value:'#{$value} , #{random(2000)}px #{random(500)}px #FFF'
+  }
+  @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
+
+#stars1 {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+  animation-direction: alternate;
+  position: absolute;
+  top: 0;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+#stars2 {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+  animation-direction: alternate;
+  position: absolute;
+  top: 0;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+  animation-direction: alternate;
+  position: absolute;
+  top: 0;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+
+@keyframes animStar {
+  from {transform: translateY(0px)}
+  to {transform: translateY(-500px)}
+}
