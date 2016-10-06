@@ -110,9 +110,9 @@ h1 {
 #jumbotron {
   background-color: $color-primary-darkest;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#205493+0,091a2f+50 */
-  background: -moz-radial-gradient(top left, ellipse cover,  $color-primary-darker 0%, $color-primary-darkest 50%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(top left, ellipse cover,  $color-primary-darker 0%,$color-primary-darkest 50%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at top left,  $color-primary-darker 0%,$color-primary-darkest 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-radial-gradient(center, ellipse cover,  $color-primary-darker 0%, $color-primary-darkest 50%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  $color-primary-darker 0%,$color-primary-darkest 50%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  $color-primary-darker 0%,$color-primary-darkest 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 
   //background-image: url('../img/jumbobg.gif');
