@@ -50,11 +50,6 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('angular', function() {
-    return gulp.src('node_modules/angular/*')
-        .pipe(gulp.dest('dist/lib/angular'));
-});
-
 gulp.task('bootstrap', function() {
     return gulp.src('node_modules/bootstrap/dist/**')
         .pipe(gulp.dest('dist/lib/bootstrap'));
@@ -85,5 +80,5 @@ gulp.task('watch', function() {
 
 
 //gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
-gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'nunjucks', 'img', 'angular', 'bootstrap']);
+gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'nunjucks', 'img', 'bootstrap']);
 gulp.task('default', ['build', 'watch']);
