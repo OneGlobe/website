@@ -72,13 +72,16 @@ gulp.task('watch', function() {
     browserSync.init({
         server: "./dist"
     });
+
+    // recompile all the things when they change
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('img/*', ['img']);
     gulp.watch('html/**/*.html', ['nunjucks']);
     gulp.watch('html/**/*.njk', ['nunjucks']);
 
-//    gulp.watch('html/*.html', ['html']);
+    // reload the browser when anything is recompiled
+    gulp.watch('dist/*').on('change', browserSync.reload);
 
 });
 
