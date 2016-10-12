@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var nunjucksRender = require('gulp-nunjucks-render');
+var browserSync = require('browser-sync').create();
 
 // Lint Task
 gulp.task('lint', function() {
@@ -68,6 +69,9 @@ gulp.task('nunjucks', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+    browserSync.init({
+        server: "./dist"
+    });
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('img/*', ['img']);
