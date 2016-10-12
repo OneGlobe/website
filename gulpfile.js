@@ -10,6 +10,12 @@ var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var nunjucksRender = require('gulp-nunjucks-render');
 var browserSync = require('browser-sync').create();
+var rimraf = require('rimraf');
+
+//Delete dist directory
+gulp.task('clean', function (cb) {
+  rimraf('./dist', cb);
+});
 
 // Lint Task
 gulp.task('lint', function() {
@@ -51,11 +57,6 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('bootstrap', function() {
-    return gulp.src('node_modules/bootstrap/dist/**')
-        .pipe(gulp.dest('dist/lib/bootstrap'));
-});
-
 gulp.task('nunjucks', function() {
     // Gets .html and .njk files in pages
     return gulp.src('html/pages/**/*.+(html|njk)')
@@ -87,5 +88,5 @@ gulp.task('watch', function() {
 
 
 //gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
-gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'nunjucks', 'img', 'bootstrap']);
+gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'lint', 'scripts', 'nunjucks']);
 gulp.task('default', ['build', 'watch']);
