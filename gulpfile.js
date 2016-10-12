@@ -18,14 +18,14 @@ gulp.task('clean', function (cb) {
 });
 
 // Lint Task
-gulp.task('lint', function() {
+gulp.task('lint', ['clean'], function() {
     return gulp.src('js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 // Compile Our Sass
-gulp.task('sass', function() {
+gulp.task('sass', ['clean'], function() {
     return gulp.src('scss/main.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/css'));
@@ -38,7 +38,7 @@ gulp.task('minify-css', ['sass'], function() {
 });
 
 // Concatenate & Minify JS
-gulp.task('scripts', function() {
+gulp.task('scripts', ['clean'], function() {
     return gulp.src('js/*.js')
         .pipe(concat('all.js'))
         .pipe(gulp.dest('dist/js'))
@@ -47,17 +47,17 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('html', function() {
+gulp.task('html', ['clean'], function() {
     return gulp.src('html/**')
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('img', function() {
+gulp.task('img', ['clean'], function() {
     return gulp.src('img/**')
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', ['clean'], function() {
     // Gets .html and .njk files in pages
     return gulp.src('html/pages/**/*.+(html|njk)')
         // Renders template with nunjucks
