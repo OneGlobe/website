@@ -1,53 +1,21 @@
 
 @import 'all';
 
+.logo {
+  border-bottom: none;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+/*
 body {
-  color: $color-gray;
+  color: #fff;
+  background: #2d3144;
 }
 
-header {
-  position: absolute;
-  top: 15px;
-  width: 100%;
-  padding: 5px 0;
-  font-size: 1.4rem;
 
-  .tagline {
-    color: $color-gray-lighter;
-  }
-
-  a {
-    color: $color-primary-darkest;
-    text-decoration: none;
-
-    &:hover,
-    &:active {
-      color: $color-primary-darker;
-      text-decoration: none;
-    }
-
-    &:visited {
-      color: $color-primary-darkest;
-    }
-
-    &:focus {
-      box-shadow: $focus-shadow;
-      outline: 0;
-      text-decoration: none;
-    }
-  }
-}
-
-footer {
-  padding-top: 3.6rem;
-  padding-bottom: 3.6rem;
-  font-size: 1.3rem;
-}
-
-#navList {
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
 
 section {
   padding-top: 7.2rem;
@@ -60,20 +28,6 @@ section {
   h1 {
     letter-spacing: 3px;
     margin-top: 0;
-  }
-}
-
-.section-alt {
-  background-color:  $color-gray-lightest;
-}
-
-
-.section-dark {
-  background-color:  $color-gray-dark;
-  color: $color-white;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $color-white;
   }
 }
 
@@ -112,34 +66,6 @@ h1 {
 
 
 
-#jumbotron {
-  background-color: $color-primary-darkest;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#205493+0,091a2f+50 */
-  background: -moz-radial-gradient(center, ellipse cover,  $color-primary-darker2 0%, $color-primary-darkest 50%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover,  $color-primary-darker2 0%,$color-primary-darkest 50%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center,  $color-primary-darker2 0%,$color-primary-darkest 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-
-  //background-image: url('../img/jumbobg.gif');
-  //background-repeat: repeat;
-  color: $color-white;
-  text-align: center;
-  padding-top: 20rem;
-  padding-bottom: 12rem;
-
-  h1 {
-    font-size: 5.6rem;
-    margin-top: 0;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
-}
-
 .staff-profile {
 
   margin-bottom: 3rem;
@@ -156,83 +82,4 @@ h1 {
     font-size: 1.25rem;
   }
 
-}
-
-// n is number of stars required
-@function multiple-box-shadow ($n) {
-  $value: '#{random(2000)}px #{random(500)}px #{$color-primary-darker2}';
-  @for $i from 2 through $n {
-    $value:'#{$value} , #{random(2000)}px #{random(500)}px #{$color-primary-darker2}'
-  }
-  @return unquote($value);
-}
-
-$shadows-small:  multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big:    multiple-box-shadow(100);
-
-
-#stars1 {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
-  animation-direction: alternate;
-  position: absolute;
-  top: 0;
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 500px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-  }
-}
-
-#stars2 {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
-  animation-direction: alternate;
-  position: absolute;
-  top: 0;
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 500px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-  }
-}
-
-#stars3 {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-big;
-  animation: animStar 150s linear infinite;
-  animation-direction: alternate;
-  position: absolute;
-  top: 0;
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 500px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-big;
-  }
-}
-
-@keyframes animStar {
-  from {transform: translateY(0px)}
-  to {transform: translateY(-500px)}
-}
+}*/

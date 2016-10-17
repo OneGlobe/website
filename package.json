@@ -8,9 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+
+  },
   "devDependencies": {
-    "bootstrap": "^3.3.6",
     "browser-sync": "^2.17.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",

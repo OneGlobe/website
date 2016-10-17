@@ -39,12 +39,12 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', ['clean'], function() {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist/js'))
-        .pipe(rename('all.min.js'))
-        .pipe(uglify())
+    return gulp.src('js/**/*.js')
+        //.pipe(concat('all.js'))
         .pipe(gulp.dest('dist/js'));
+        //.pipe(rename('all.min.js'))
+        //.pipe(uglify())
+        //.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('html', ['clean'], function() {
