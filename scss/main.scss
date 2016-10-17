@@ -1,85 +1,54 @@
-
-@import 'all';
-
-.logo {
-  border-bottom: none;
-
-  img {
-    max-width: 100%;
-  }
-}
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+// @import 'font-awesome.min.css';
 
 /*
-body {
-  color: #fff;
-  background: #2d3144;
-}
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
+	@include skel-breakpoints((
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)',
+		xxsmall: '(max-width: 360px)'
+	));
 
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: 1.5em )
+	));
 
-section {
-  padding-top: 7.2rem;
-  padding-bottom: 7.2rem;
+// Base.
 
-  h1, h2, h3, h4, h5, h6 {
-    color: $color-gray;
-  }
+	@import 'base/page';
+	@import 'base/typography';
 
-  h1 {
-    letter-spacing: 3px;
-    margin-top: 0;
-  }
-}
+// Component.
 
-.capability-desc {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+	@import 'components/box';
+	@import 'components/button';
+	@import 'components/features';
+	@import 'components/form';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/list';
+	@import 'components/section';
+	@import 'components/split';
+	@import 'components/spotlights';
+	@import 'components/table';
+	@import 'components/wrapper';
 
-  h3 {
-    margin-top: 0;
-  }
+// Layout.
 
-  .thumbnail {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}
-
-.catchSeparator {
-  color: $color-secondary;
-  margin: 0 1.5rem;
-}
-
-.logo {
-  height: 50px;
-}
-
-.partner-logo {
-  max-height: 10rem;
-  margin: 2.5rem 0;
-}
-
-h1 {
-  text-transform: uppercase;
-}
-
-
-
-.staff-profile {
-
-  margin-bottom: 3rem;
-
-  img {
-    width: 100%;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: .1rem 0;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-}*/
+	@import 'layout/header';
+	@import 'layout/wrapper';
+	@import 'layout/footer';
+	@import 'layout/sidebar';
+	@import 'layout/intro';
