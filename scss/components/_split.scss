@@ -9,7 +9,7 @@
 	.split {
 		@include vendor('display', 'flex');
 
-		> * {
+		& > * {
 			width: calc(50% - 2.5em);
 
 			&:nth-child(2n - 1) {
