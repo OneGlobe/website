@@ -34,19 +34,18 @@
 
 // Palette.
 	$palette: (
-		bg:					#0E2745,
-		bg-alt:				darken(#0E2745, 5), //312450
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
+		bg:							#0E2745,
+		bg-alt:					darken(#0E2745, 5), //312450
+		bg-body: 				#fff,
+		bg-body-alt:		darken(#fff, 10),
+		fg:							rgba(255,255,255,0.55),
+		fg-bold:				#fff,
+		fg-light:				rgba(255,255,255,0.35),
+		border:					rgba(255,255,255,0.15),
 		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#9BAC68,
-		accent1-alt:		darken(#9BAC68, 10),
-		accent2:			#73A6D5,
-		accent2-alt:		darken(#73A6D5, 10),
-		accent3:			#B8D76F,
-		accent3-alt:		darken(#B8D76F, 10),
-		accent4:			#fff,
-		accent4-alt:		darken(#fff, 10)
+		fg-body:				#979797,
+		fg-body-bold:		#777,
+		fg-body-light:	#a7a7a7,
+		border-body:		#c7c7c7,
+		border-body-bg:	#e7e7e7
 	);
