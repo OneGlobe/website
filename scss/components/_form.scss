@@ -43,7 +43,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: _palette(fg-body-bold);
 		font-weight: _font(weight-bold);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 0.35) 0;
@@ -58,10 +58,10 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		background: _palette(border-body-bg);
 		border-radius: _size(border-radius);
 		border: none;
-		border: solid _size(border-width) _palette(border);
+		border: solid _size(border-width) _palette(border-body);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -74,8 +74,8 @@
 		}
 
 		&:focus {
-			border-color: _palette(fg-bold);
-			box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+			border-color: _palette(fg-body-bold);
+			box-shadow: 0 0 0 _size(border-width) _palette(fg-body-bold);
 		}
 	}
 
@@ -85,7 +85,7 @@
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			color: _palette(border-body);
 			content: '\f078';
 			display: block;
 			height: _size(element-height);
@@ -105,8 +105,8 @@
 
 	select {
 		option {
-			background-color: _palette(bg);
-			color: _palette(fg-bold);
+			background-color: _palette(bg-body);
+			color: _palette(fg-body-bold);
 		}
 	}
 
@@ -137,7 +137,7 @@
 
 		& + label {
 			@include icon;
-			color: _palette(fg);
+			color: _palette(fg-body);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -147,9 +147,9 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: _palette(border-body-bg);
 				border-radius: _size(border-radius);
-				border: solid _size(border-width) _palette(border);
+				border: solid _size(border-width) _palette(border-body);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
@@ -164,8 +164,8 @@
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(fg-bold);
+				background: _palette(fg-body-bold);
+				border-color: _palette(fg-body-bold);
 				color: _palette(accent3);
 				content: '\f00c';
 			}
@@ -173,8 +173,8 @@
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(fg-bold);
-				box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+				border-color: _palette(fg-body-bold);
+				box-shadow: 0 0 0 _size(border-width) _palette(fg-body-bold);
 			}
 		}
 	}
@@ -196,26 +196,26 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(fg-body-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(fg-body-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(fg-body-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(fg-body-light) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(fg-body-light) !important;
 		opacity: 1.0;
 	}
