@@ -7,6 +7,7 @@
 /* Footer */
 
 	#footer {
+		background-color: _palette(bg);
 		#sidebar + #wrapper + & {
 			margin-left: _size(sidebar-width);
 
