@@ -180,7 +180,7 @@
 
 	hr {
 		border: 0;
-		border-bottom: solid _size(border-width) _palette(border);
+		border-bottom: solid _size(border-width) _palette(border-body);
 		margin: _size(element-margin) 0;
 
 		&.major {
