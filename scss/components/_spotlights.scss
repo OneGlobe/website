@@ -62,10 +62,11 @@
 			}
 
 			&:nth-child(1) {
+				background-color: rgba(0,0,0,0.05);
 			}
 
 			&:nth-child(2) {
-				background-color: rgba(0,0,0,0.05);
+
 			}
 
 			&:nth-child(3) {
@@ -128,4 +129,3 @@
 			}
 		}
 	}
-
