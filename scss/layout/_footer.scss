@@ -17,6 +17,8 @@
 		}
 
 		> .inner {
+			padding:1em;
+			text-align: center;
 			a {
 				border-bottom-color: _palette(border);
 
@@ -27,6 +29,7 @@
 
 			.menu {
 				font-size: 0.8em;
+				margin: 0;
 				color: _palette(border);
 			}
 		}

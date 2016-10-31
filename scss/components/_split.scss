@@ -15,7 +15,7 @@
 
 		> :nth-child(2n - 1) {
 			padding-right: 2.5em;
-			border-right: solid 1px _palette(border);
+			border-right: solid 1px _palette(border-body);
 		}
 
 		> :nth-child(2n) {
@@ -60,7 +60,7 @@
 			display: block;
 
 			> * {
-				border-top: solid 1px _palette(border);
+				border-top: solid 1px _palette(border-body);
 				margin: 4em 0 0 0;
 				padding: 4em 0 0 0;
 				width: 100% !important;
