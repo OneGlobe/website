@@ -36,4 +36,24 @@
 		@include breakpoint(large) {
 			background-attachment: scroll;
 		}
+
+		.notice {
+			position: absolute;
+	    bottom: 0;
+	    background: #fff;
+	    width: 100%;
+	    padding: 1em;
+			border-bottom: 1px solid _palette(border-body);
+			h3 {
+				margin: 0;
+				line-height: 50px;
+				float: left;
+			}
+			.button {
+				float: right;
+			}
+			@include breakpoint(medium) {
+				position: relative;
+			}
+		}
 	}
