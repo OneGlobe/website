@@ -14,8 +14,23 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 
+		.inner {
+			@include breakpoint(small) {
+				padding-top: 0;
+			}
+		}
+
 		h1 {
 			color: _palette(fg-bold);
+		}
+
+		.logo {
+			display: none;
+			@include breakpoint(small) {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
 		}
 
 		p {
