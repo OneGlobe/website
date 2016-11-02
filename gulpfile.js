@@ -68,6 +68,13 @@ gulp.task('nunjucks', ['clean'], function() {
         .pipe(gulp.dest('dist'))
 });
 
+gulp.task('manifests', ['clean'], function() {
+    // Gets .html and .njk files in pages
+    return gulp.src('html/*.+(xml|json)')
+        // output files in app folder
+        .pipe(gulp.dest('dist'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     browserSync.init({
@@ -88,5 +95,5 @@ gulp.task('watch', function() {
 
 
 //gulp.task('build', ['lint', 'sass', 'minify-css', 'scripts', 'html', 'img', 'angular', 'bootstrap']);
-gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'lint', 'scripts', 'nunjucks']);
+gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'lint', 'scripts', 'nunjucks', 'manifests']);
 gulp.task('default', ['build', 'watch']);
