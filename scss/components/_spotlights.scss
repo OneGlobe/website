@@ -17,7 +17,7 @@
 			}
 
 			> .image {
-				background-position: center center;
+				background-position: center top;
 				background-size: cover;
 				border-radius: 0;
 				display: block;
@@ -95,7 +95,7 @@
 				}
 			}
 
-			@include breakpoint(medium) {
+			@include breakpoint(small) {
 				display: block;
 
 				> .image {
@@ -118,9 +118,13 @@
 			}
 
 			@include breakpoint(small) {
+				border: 1px solid _palette(border-body);
+
+				margin: 2em 1em;
+
 				> .image {
 					height: 50vh;
-					min-height: 15em;
+					min-height: 30em;
 				}
 
 				> .content {

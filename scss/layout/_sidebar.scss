@@ -39,6 +39,14 @@
 			img {
 				max-width: 100%;
 			}
+
+			@include breakpoint(large) {
+				img {
+					max-height: 3em;
+			    margin-top: .25em;
+			    margin-right: 1em;
+				}
+			}
 		}
 
 		nav {
@@ -155,7 +163,7 @@
 						display: block;
 						height: inherit;
 						line-height: inherit;
-						margin: 0 0 0 2em;
+						margin: 0 0 0 1em;
 						padding: 0;
 					}
 				}

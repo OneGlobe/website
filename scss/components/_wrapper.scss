@@ -15,7 +15,7 @@
 			width: _size(inner-width);
 
 			@include breakpoint(xlarge) {
-				@include padding(4em, 4em);
+				padding: 4em;
 			}
 
 			@include breakpoint(large) {
@@ -23,7 +23,7 @@
 			}
 
 			@include breakpoint(small) {
-				@include padding(3em, 2em);
+				padding: 3em 2em;
 			}
 		}
 
