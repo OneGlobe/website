@@ -39,6 +39,14 @@
 			img {
 				max-width: 100%;
 			}
+
+			@include breakpoint(large) {
+				img {
+					max-height: 3em;
+			    margin-top: .25em;
+			    margin-right: 1em;
+				}
+			}
 		}
 
 		nav {
