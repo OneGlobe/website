@@ -120,7 +120,7 @@
 			@include breakpoint(small) {
 				border: 1px solid _palette(border-body);
 
-				margin: 2em 1em;
+				margin: 2em 0em;
 
 				> .image {
 					height: 50vh;
