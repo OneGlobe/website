@@ -174,11 +174,11 @@
 					// Assign image.
 						$image.css('background-image', 'url(' + $img.attr('src') + ')');
 
-					x = $img.data('position');
-					// Set background position.
-						if (x) {
-							$image.css('background-position', x);
-						}
+					// x = $img.data('position');
+					// // Set background position.
+					// 	if (x) {
+					// 		$image.css('background-position', x);
+					// 	}
 
 					// Hide <img>.
 						$img.hide();
