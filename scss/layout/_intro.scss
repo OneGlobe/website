@@ -9,13 +9,19 @@
 	#intro {
 		background-color: _palette(bg);
 		background-attachment: fixed;
-		background-image: url('/img/intro.svg');
+		background-image: url('/img/background2.png');
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 
 		@include breakpoint(small) {
 			text-align: center;
+		}
+
+		&.wrapper.fullscreen {
+			@include breakpoint(small) {
+				padding: 2em 0 0;
+			}
 		}
 
 		.inner {
@@ -97,16 +103,16 @@
 	    width: 100%;
 	    padding: 1em;
 			border-bottom: 1px solid _palette(border-body);
+			text-align: left;
 			h3 {
 				margin: 0;
 				line-height: 50px;
-				float: left;
 				display: inline;
 			}
 			.button {
 				float: right;
 			}
-			@include breakpoint(medium) {
+			@include breakpoint(small) {
 				position: relative;
 			}
 		}

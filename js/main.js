@@ -25,14 +25,14 @@
 				$body.addClass('is-ie');
 
 		// Disable animations/transitions until the page has loaded.
-			if (skel.canUse('transition'))
-				$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+			// if (skel.canUse('transition'))
+			// 	$body.addClass('is-loading');
+			//
+			// $window.on('load', function() {
+			// 	window.setTimeout(function() {
+			// 		$body.removeClass('is-loading');
+			// 	}, 100);
+			// });
 
 		// Forms.
 
