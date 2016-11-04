@@ -16,6 +16,29 @@
 
 	$(function() {
 
+		  var URL = 'https://38al20fv2a.execute-api.us-east-1.amazonaws.com/prod/contact'
+
+		  $('#contact-form').submit(function (event) {
+		    event.preventDefault()
+
+		    var data = {
+		      name: $('#name').val(),
+		      email: $('#email').val(),
+		      message: $('#message').val()
+		    }
+
+		    $.ajax({
+		      type: 'POST',
+		      url: URL,
+		      dataType: 'json',
+		      contentType: 'application/json',
+		      data: JSON.stringify(data),
+		      success: function () {
+		        $('#contact-form').parent().html('<p>Thanks for getting in touch.  We&apos;ll get back to you shortly.</p>');
+		      }
+		    })
+		  });
+
 		var	$window = $(window),
 			$body = $('body'),
 			$sidebar = $('#sidebar');
