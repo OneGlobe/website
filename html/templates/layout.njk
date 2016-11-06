@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
+
+    <meta property="og:title" content="OneGlobe">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
+    <meta property="og:url" content="http://www.oneglobeit.com">
+    <meta property="og:image" content="http://www.oneglobeit.com/img/logo.png">
+
+    <meta name="twitter:card" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
+    <meta name="twitter:site" content="@oneglobellc">
+    <meta name="twitter:title" content="OneGlobe">
+    <meta name="twitter:description" content="OneGlobe provides full-stack, full-lifecycle software engineering, architecture, and cloud services to a variety of federal and commercial clients">
+
+    <title>{{title}}</title>
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+
+</head>
+<body>
+
+{% include "partials/header.njk" %}
+
+{% block content %}{% endblock %}
+
+{% include "partials/footer.njk" %}
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71782073-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/lib/jquery.scrollex.min.js"></script>
+<script src="/js/lib/jquery.scrolly.min.js"></script>
+<script src="/js/lib/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

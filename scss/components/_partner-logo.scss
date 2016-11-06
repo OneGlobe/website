@@ -1,0 +1,15 @@
+.partner-logo {
+  display: inline-block;
+  float: left;
+  height: 150px;
+  width: 25%;
+  padding: 2em 2em;
+  text-align: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @include breakpoint(small) {
+    width: 50%;
+  }
+}
